@@ -97,6 +97,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   width: 75%;
   height: 2cm;
 }
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSFGhLSeBSHZLdGUnLz4ZnCN0bRmNVVukQqeg&usqp=CAU');
+  resize: cover;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #306bab, 0 0 30px #306bab, 0 0 40px #306bab, 0 0 50px #306bab, 0 0 60px #306bab, 0 0 70px#306bab;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #306bab, 0 0 40px #306bab, 0 0 50px #306bab, 0 0 60px #306bab, 0 0 70px #306bab, 0 0 80px #306bab;
+  }
+}
       
         </style>
         
@@ -117,6 +137,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
     <!-- font-awesome icons -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine"> -->
     <link href="css/fontawesome-all.min.css" rel="stylesheet">
 	<!-- pop up box -->
 	<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
@@ -129,23 +150,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- banner -->
     <!-- top-bar-start -->
     <div id="top-bar" class="d-none d-md-block" style="background-color: #233242; color:white;">
-      <div  style="height: 1cm;background-color: #233242;overflow-y: scroll;">
+      <div  style="height: 1cm;background-color: #233242;width: 100%;overflow-y: auto;">
         <div   style="margin-top: 2mm;margin-left: 1cm; align-content: center;">
-            <a href="https://www.ieee.org/" style="font-size: 14px;font-weight: 400; color: white;font-size: small;margin-top: 0.5cm;" target="_blank">IEEE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://www.ieeer10.org/" style="font-size: 14px;font-weight: 400;color: white;font-size: small;" target="_blank">IEEE Region 10</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href=" https://ieeehyderabad.org/" style="font-size: 14px;font-weight: 400;color: white;font-size: small;" target="_blank"> IEEE Hyderabad Section</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.ieee.org/" style="font-size: 14px;font-weight: 400; color: white;font-size: small;margin-top: 0.5cm;" >IEEE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.ieeer10.org/" style="font-size: 14px;font-weight: 400;color: white;font-size: small;" >IEEE Region 10</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href=" https://ieeehyderabad.org/" style="font-size: 14px;font-weight: 400;color: white;font-size: small;" > IEEE Hyderabad Section</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="https://ieeexplore.ieee.org/Xplore/home.jsp" style="font-size: 14px;font-weight: 400;color: white;font-size: small;" target="_blank">IEEE Xplore Digital Library</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://spectrum.ieee.org/" style="font-size: 14px;font-weight: 400;color: white;font-size: small;" target="_blank">IEEE Spectrum Online</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://www.ieee.org/sitemap.html" style="font-size: 14px;font-weight: 400;color: white;font-size: small;" target="_blank">More Sites..</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href=" https://www.instagram.com/ieee_vnrvjiet/"><i class="fa fa-instagram" style="font-size:20px;color:#fff"></i></a>&nbsp;
-            <a href="https://www.facebook.com/ieeevnrvjiet"><i class="fa fa-facebook" style="font-size:20px;color:#fff"></i></a>&nbsp;
-            <a href="vnrieeesb@gmail.com"><i class="fa fa-mail" style="font-size:20px;color:#fff"></i></a>&nbsp;
-            <a href="https://twitter.com/ieee_vnr\"><i class="fa fa-twitter" style="font-size:20px;color:#fff"></i></a>&nbsp;
-            <a href="https://www.youtube.com/channel/UCYhYd17n9OHQ4q9v3FJrzwA/"><i class="fa fa-youtube" style="font-size:20px;color:#fff"></i></a>&nbsp;
-        </div>
+            <a href="https://spectrum.ieee.org/" style="font-size: 14px;font-weight: 400;color: white;font-size: small;" >IEEE Spectrum Online</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.ieee.org/sitemap.html" style="font-size: 14px;font-weight: 400;color: white;font-size: small;">More Sites..</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a href=" https://www.instagram.com/ieee_vnrvjiet/"><i class="fa fa-instagram" style="font-size:20px;color:#fff;"></i></a>&nbsp;&nbsp;
+            <a href="https://www.facebook.com/ieeevnrvjiet"><i class="fa fa-facebook" style="font-size:20px;color:#fff"></i></a>&nbsp;&nbsp;
+            <a href="vnrieeesb@gmail.com"><i class="fa fa-envelope" style="font-size:20px;color:#fff"></i></a>&nbsp;&nbsp;
+            <a href="https://twitter.com/ieee_vnr\"><i class="fa fa-twitter" style="font-size:20px;color:#fff"></i></a>&nbsp;&nbsp;
+            <a href="https://www.youtube.com/channel/UCYhYd17n9OHQ4q9v3FJrzwA/"><i class="fa fa-youtube" style="font-size:20px;color:#fff"></i></a>&nbsp;&nbsp;
        
-    </div>   
+        </div>
+    </div>
     </div>
       <!-- #top-bar end -->
     <!-- header -->
@@ -163,7 +183,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-right: 1cm;" >
+              <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                   <ul class="navbar-nav ml-lg-auto text-center">
                       <li>
                           <a class="nav-link" href="index.html">HOME
@@ -176,7 +196,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                               aria-expanded="false">
                               SB CHAPTERS & AFFINITY GROUPS
                           </a>
-                          <div class="dropdown-menu" style="margin-left: 1cm;" aria-labelledby="navbarDropdown">
+                          <div class="dropdown-menu"  aria-labelledby="navbarDropdown">
                               <a class="dropdown-item" href="typo.html">WIE</a>
                               <div class="dropdown-divider"></div>
                               <a class="dropdown-item" href="gallery.html">CS</a>
@@ -274,8 +294,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <br> 
     <br>  
     <br>
-    <h1 style="color: blue; text-align: center; font-style: oblique;font-size: 1cm; font-weight: 500;">EVENTS-2K20</h1>
-    
+    <h1 class="glow" style=" font-family: 'Tangerine',serif;color: white; font-weight: 550;  text-align: center; ">EVENTS-2K20</h1>
     <br>
     <br>
     <div class="container" style="align-content: center;">

@@ -6,7 +6,7 @@
 
 body {
 	margin: 0;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Lato', sans-serif;
 	background: #fff;
 }
 
@@ -107,8 +107,11 @@ a.navbar-brand i {
 	font-size: 0.4cm;
 	text-transform: capitalize;
 	background-color: #306bab;
-     color:#fff; 
+	 color:#fff; 
+	 font-weight: 600;
 	padding: 5px 14px;
+	font-family: 'Lato',sans-serif;
+	
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -120,7 +123,7 @@ a.navbar-brand i {
 	color: #000;
 }
 
-.dropdown-item {
+.dropdown-item:hover {
 	color: #306bab;
 	background-color: #fff;
 	text-align: center;
@@ -132,8 +135,8 @@ a.navbar-brand i {
 	color: #333333 !important;
 	text-align: center;
 	font-size: 3.5mm;
-	font-weight: 500;
-	font-family: 'Lato' sans-serif;
+	font-weight: 550;
+	font-family: 'Ubuntu' sans-serif;
 }
 
 .w3ls-btn {
